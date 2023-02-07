@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <title>Reggie's coffie shop</title>
+</head>
+<body>
+    <!--This is an html comment-->
+
+<!-- 
+    shift will indent - Shift + tab will indent backwards.
+    ctrl + left/right arrows move to start adn end of the line.
+    ctrl up/down arrows move to start or end of page
+ -->
+
+    <!-- Site Header-->
+    <header>
+        <!-- The h1 is the most important header-->
+        <h1>Reggie's coffie shop</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Index</a> </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <!-- starting main content of the page-->
+    <main>
+      
+      <h2>contact us</h2>  
+      <!--  adding tables for hours operation -->
+        <table>Hours of operation <caption>
+            <thead>
+                <tr>
+                <th>Day</th>
+                <th>hours</th>
+                 </tr>
+             </thead>  
+             <tbody>
+                <tr>
+                    <td>mon-fri</td>
+                    <td>6AM - 9PM</td>
+            
+                </tr>
+                <tr>
+                    <td>Sat</td>
+                    <td>8AM-11PM</td>
+                </tr>
+                <tr>
+                    <td>Sun</td>
+                    <td>closed</td>
+                </tr>
+             </tbody>
+        </caption>
+        </table>
+        <!-- adding section for ocntact form -->
+        <section>
+        <h3>We would love to hear from you</h3>
+        <!-- adding a form -->
+        <form action="thanks.html" method="get">
+            <label for="fullname">Name</label>
+            <input type="text" id="fullname" name="fullname" placeholder="John Doe">
+            <label for="youremail">Email</label>
+            <input type="youremail" id="youremail" name="youreail" placeholder="Algonquin Email" value="@algonquinlive.com">
+            <div>
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+                <label for="tickets">How many tickets? (sold in pairs)</label>
+                <input type="number" name="tickets" id="tickets" min="2" max="10" step="2" value="2">
+            </div>
+            <div>
+                <label for="row">Row</label>
+                <select name="row" id="row">
+                    <option value="front">front</option>
+                    <option value="center"selected>center</option>
+                    <option value="back">back</option>
+                </select>
+            </div>
+            <div>
+                <h3>Have you been here before?</h3>
+                <label for="yes">Yes</label>
+                <input type="radio" id="yes" name="past">
+
+                <label for="no">No</label>
+                <input type="radio" id="no" name="past">
+            </div>
+            <div>
+                <h3>Policies</h3>
+                <input type="checkbox" name="policies" id="policies" required>
+                <label for="policies"> I agree to the terms of service</label>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        </section>
+    <footer>
+        Copright &copy; Reggie's Coffe Shop
+    </footer>
+</section>
+    </main>
+</body>
