@@ -1,0 +1,89 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif; color :darkgray
+} 
+
+h1{
+    color:darkblue
+}
+p{
+    background-color: antiquewhite;
+}
+h1, h2, h3, h4{
+text-decoration: underline;
+}
+nav ul {
+    list-style: :none;
+}
+nav ul a {
+    color :darkslategrey
+}
+/* selecting element with id */
+#treatofweek {
+    background-color: cadetblue;
+}
+.blue-link {
+    background-color: darkslategray;
+    color :antiquewhite;
+    text-decoration : none
+}
+.large-text {
+    font-size: 20px;
+}
+.white-text {
+    color :antiquewhite
+}
+articlep> {
+font-size: 24px;
+}
+/* Adjacent simbling selector, selects the element that is the very next student */
+h3+ul {
+border: 1px solid black;    
+}
+[href="#treatofweek"] 
+{
+    font: bold;
+}
+[src$=".jpg" ] {
+    border: 4px solid black;
+}
+nav ul a,
+nav ul a:link,
+nav ul a:visited {
+    background-color: antiquewhite;
+    /*  */
+    box-shadow: -2px 2px 4px 2px color : black;
+}
+
+nav ul a:hover,
+nav ul a:focus {
+    text-decoration: underline;
+}
+
+nav ul a :active {
+    box-shadow: 0 0 4px 2px black;  
+}
+
+
+/* styling table */
+table {
+    border-collapse: collapse;
+}
+/* hex color value with six characters */
+tbody tr:nth-child(even) {
+    background-color: #d5836c;
+}
+table th:nth-child(n),
+table td:nth-child(n) {
+border : 1px solid black;
+}
+table td :nth-child(2n+1) {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+/* css specifity 
+Formula : in line style id class tag name 0,0,0,0 */
+footer {
+    background-color: aqua;
+}
+body footer {
+    background-color: orange;
+}
