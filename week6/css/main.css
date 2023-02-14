@@ -1,5 +1,7 @@
 body {
-    font-family: Georgia, 'Times New Roman', Times, serif; color :darkgray
+    font-family: Georgia, 'Times New Roman', Times, serif; color :darkgray;
+    /* adding background image */
+background-image: url(../images/white_brick_wall.png);
 } 
 
 h1{
@@ -19,7 +21,8 @@ nav ul a {
 }
 /* selecting element with id */
 #treatofweek {
-    background-color: cadetblue;
+    background: cadetblue url(../images/bread.jpg)
+    no-repeat center;
 }
 .blue-link {
     background-color: darkslategray;
@@ -62,6 +65,7 @@ nav ul a:focus {
 nav ul a :active {
     box-shadow: 0 0 4px 2px black;  
 }
+
 
 
 /* styling table */
