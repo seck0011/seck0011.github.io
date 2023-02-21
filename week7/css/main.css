@@ -3,6 +3,14 @@ body {
     /* adding background image */
 background-image: url(../images/white_brick_wall.png);
 } 
+/* box model example */
+section p {
+
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
 h1{
     color:darkblue
@@ -16,6 +24,12 @@ text-decoration: underline;
 nav ul {
     list-style: :none;
 }
+nav ul li{
+    display: inline-block;
+    width: 49%;
+    padding: 1em;
+    box-sizing: border-box;
+}
 nav ul a {
     color :darkslategrey
 }
@@ -24,10 +38,18 @@ nav ul a {
     background: cadetblue url(../images/bread.jpg)
     no-repeat center;
 }
+.blue-link,.large-text {
+    position: absolute;
+
+}
 .blue-link {
     background-color: darkslategray;
     color :antiquewhite;
-    text-decoration : none
+    text-decoration : none;
+    padding: 1.5em;
+    width: 360px;
+    display: block;
+    
 }
 .large-text {
     font-size: 20px;
@@ -35,7 +57,7 @@ nav ul a {
 .white-text {
     color :antiquewhite
 }
-articlep> {
+article p> {
 font-size: 24px;
 }
 /* Adjacent simbling selector, selects the element that is the very next student */
@@ -65,7 +87,13 @@ nav ul a:focus {
 nav ul a :active {
     box-shadow: 0 0 4px 2px black;  
 }
+article,aside {
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 1px solid black;
+    padding: 1.5em;
 
+}
 
 
 /* styling table */
