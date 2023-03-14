@@ -128,7 +128,40 @@ line-height: inherit;
     .banner h1 {
         color: white;
     }
+    /* Navigation */
+    .nav-list li {
+        border-bottom: 1px solid grey;
+        text-align: center;
+    }
+    .nav-list li {
+    display: flex;
+    }
+    /* LoVE HAte */
+  .nav-list a,
+  .nav-list a:link,
+  .nav-list a:visited {
+    display: block;
+    padding: 1em 0;
+    text-decoration: none;
+  
+  }
+  .nav-list li :last-child{
+    border: none;
+  }
+  .nav-list a:hover
+  .nav-list a:focus,
+  .nav-list a.current{
+    background-color: #00add8;
+    color: inherit;
+  }
+    
+    
+    
     /* Mobile App section again */
+
+
+
+
 
    .app img {
 width: 40%;
@@ -138,4 +171,22 @@ margin-right: 1em;
 .app .btn{
     float: right;
 }
+}
+/* ACTION SECTION */
+.actions-list {
+  display: flex;
+  flex-flow: row wrap;
+}
+.actions-list {
+  max-width: 50%;
+  padding: 1em;
+  font-size: 1.5rem;
+
+
+}
+@media screen and (min-width:800px) {
+  .actions-list {
+    max-width: 20%;
+  }
+  
 }
